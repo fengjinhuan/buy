@@ -1,0 +1,40 @@
+var mainnavArr={
+    nav:[
+        {
+            id:1,
+            title:'推荐'
+        },
+        {
+            id:2,
+            title:'讯息'
+        },
+        {
+            id:3,
+            title:'货币'
+        },
+        {
+            id:4,
+            title:'汇评'
+        },
+        {
+            id:5,
+            title:'学堂'
+        },
+        {
+            id:6,
+            title:'交易商'
+        }
+    ],
+    btn:'＋'
+}
+var mainnav=angular.module('mainnav',[]);
+mainnav.controller('mainnav',function($scope){
+    $scope.mainnav=mainnavArr;
+})
+mainnav.directive('mainNav',function(){
+    return{
+        restrict:'ECMA',
+        templateUrl:'tpls/mainNav.html',
+        replace:true
+    }
+})

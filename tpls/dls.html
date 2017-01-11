@@ -1,0 +1,26 @@
+<div class="choose-box">
+    <div class="dls-map">
+        <span class="dls-main">地区:</span>
+        <span class="dls-check-item">
+            <input type="checkbox" ng-model="all">
+            全选
+        </span>
+        <span class="dls-check-item" ng-repeat="v in dls[0] track by $index">
+            <input type="checkbox" ng-checked="all">
+            {{v.title}}
+        </span>
+        <span class="dls-more">更多 ＋</span>
+    </div>
+    <div class="dls-map">
+        <span class="dls-main">地区:</span>
+        <span class="dls-check-item">
+            <input type="checkbox" ng-model="all1">
+            全选
+        </span>
+        <span class="dls-check-item" ng-repeat="v in dls[1] track by $index">
+            <input type="checkbox" ng-checked="all1">
+            {{v.title}}
+        </span>
+        <span class="dls-more">更多 ＋</span>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+.hot{
+    box-sizing: border-box;
+    height: 2.16rem;width: 100%;
+    border: 0.2rem solid #eee;
+    border-right: none;
+    border-left: none;
+    display: flex; 
+    padding: 0.2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.hot a{
+    width: 1.6rem;height: 0.55rem;
+    line-height: 0.55rem;
+    text-align: center;
+    border: 1px solid #00387D;
+    color: #00387D;
+    font-size: 0.24rem;
+    border-radius: 4px;
+}

@@ -1,0 +1,10 @@
+<div class="header" ng-controller="headnav">
+    <h1>{{header.title}}</h1>
+    <div class="nav">
+        <div class="nav-list" ng-repeat="v in header.nav">
+            <span class="nav-icon"></span>
+            <span class="nav-title">{{v.content}}</span>
+        </div>
+    </div>
+    <a href="" class="login">登录</a>
+</div>

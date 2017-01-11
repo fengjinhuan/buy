@@ -1,0 +1,12 @@
+.mainnav{
+    height: 0.68rem;width: 100%;
+    background: #0D76D3;
+    font-size: 0.34rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+.mainnav a{
+    color: #fff;
+}

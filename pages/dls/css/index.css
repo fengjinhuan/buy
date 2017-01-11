@@ -1,0 +1,105 @@
+.dls-box{
+    height: auto;
+    width: 100%;
+}
+.dls-head{
+    background: #0D76D3;
+    color: #fff;
+    text-indent: 0.22rem;
+    font-size: 0.36rem;
+    display: flex;
+    height: 0.87rem;
+    align-items: center;
+}
+.dls-head a{
+    color: #fff;
+}
+.back{
+    line-height: 0.87rem;
+    color: #fff;
+    font-size: 0.5rem;
+}
+.next{
+    margin-left: 3.4rem;
+}
+.choose-box{
+    flex-wrap: wrap;
+    height: 1.7rem;width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 0 0.2rem;
+    border-top: 0.2rem solid #eee;
+    border-bottom: 0.2rem solid #eee;
+    display: flex;
+    font-size: 0.24rem;
+}
+.dls-main{
+    font-size: 0.27rem;
+    color: #333;
+}
+.dls-map{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;width: 100%;
+}
+.dls-check-item{
+    display: flex;
+    align-items: center;
+}
+.dls-more{
+    color: #999;
+}
+.choose-box input{
+    margin-right:0.12rem; 
+    outline: none;
+    height: 0.3rem;width: 0.3rem;
+}
+.dls-box{
+    background: #eee;
+    height: auto;
+    border-bottom: 1px solid transparent;
+}
+.dls-list{
+    color: #333;
+    background: #fff;
+    margin-bottom: 0.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    height: 2.27rem;width: 100%;
+    padding:0 0.2rem;
+    box-sizing: border-box; 
+}
+.dls-list-top{
+    font-size: 0.34rem;
+    color: #333;
+    align-items: center;
+    height: 0.7rem;width: 100%;
+    display: flex;
+}
+.dls-list-icon{
+    margin-left: 0.2rem;
+    height: 0.32rem;width: 0.82rem;
+}
+.dls-list-bottom{
+    height: 1.28rem;width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.dls-list-img{
+    height: 1.28rem;width: 3.2rem;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+}
+.dls-list-con{
+    height: 100%;width: 3.6rem;
+    padding-left: 0.3rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    border-left: 1px solid #eee;
+}
+.dls-list-con .call-guan{
+    font-size: 0.2rem;
+    overflow: hidden;
+}

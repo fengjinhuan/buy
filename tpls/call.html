@@ -1,0 +1,30 @@
+<div class="call-list" ng-repeat="v in callarr">
+    <div class="call-list-title">
+        <h1>{{v.title}}</h1>
+        <div class="call-list-icon">
+            <span class="call-icon"></span>
+            <span>{{v.x}}</span>
+        </div>        
+    </div>
+    <div class="call-list-con">
+        <a href="">
+            <img src="images/{{v.url}}.png" alt="">
+        </a>
+        <div class="call-list-num">
+            <div class="call-guan">
+                <span>{{v.guan}}</span>
+                <span class="guan-num">{{v.guanNum}}</span>
+            </div>
+            <div class="call-jian">
+                <span>{{v.jian}}</span>
+                <span>{{v.jianEnglish}}</span>
+                <span class="call-line"></span>
+                <span>{{v.jianNum}}</span>
+            </div>
+            <a href="" class="call-qq">
+                <span class="call-qq-icon"></span>
+                <span>联系客服</span>
+            </a>
+        </div>
+    </div>
+</div>

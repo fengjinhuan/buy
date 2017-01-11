@@ -1,0 +1,45 @@
+/*头部*/
+.header{
+    display: flex;
+    align-items: center;
+}
+.header h1{
+    font-size: 0.32rem;
+    color: #0D76D3;
+    padding: 0.3rem 0.2rem;   
+}
+.nav{
+    display: flex;
+    align-items: center;
+}
+.nav-list{
+    display: flex;
+    width: 0.82rem;height: 0.7rem;
+    align-items: center;
+    flex-direction: column;
+    border-right:1px solid #e2e2e2; 
+}
+.nav-icon{
+    height: 0.38rem;width: 0.38rem;
+    background-image: url(../../../images/top.png);
+    background-size: cover;
+}
+.nav-title{
+    color: #6FA1DF;
+    font-size: 0.24rem;
+    line-height: 0.3rem;
+}
+.nav-list:nth-child(1) .nav-icon{
+    background-position: 0 0;
+}
+.nav-list:nth-child(2) .nav-icon{
+    background-position: -0.4rem 0;
+}
+.nav-list:nth-child(3) .nav-icon{
+    background-position: -0.8rem 0;
+}
+.login{
+    margin-left: 2.5rem;
+    font-size: 0.24rem;
+    color: #333333;
+}

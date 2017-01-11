@@ -1,0 +1,110 @@
+var dlsArr = [
+    [
+        {
+            id:2,
+            title:'华南'
+        },
+        {
+            id:3,
+            title:'华北'
+        },
+        {
+            id:4,
+            title:'华中'
+        },
+        {
+            id:5,
+            title:'西北'
+        }
+    ],
+    [
+        {
+            id:2,
+            title:'XM'
+        },
+        {
+            id:3,
+            title:'嘉盛'
+        },
+        {
+            id:4,
+            title:'福汇英国'
+        }
+    ]
+]
+var dlsItem = [
+    {
+        id:1,
+        title:'IG小米个人工作室',
+        icon:'dls_03.png',
+        img:'dls_07.png',
+        guan:'关注',
+        guanNum:'213989',
+        map:'地区',
+        mapNum:'华东',
+        ping:'代理平台',
+        pingNum:'IG Market/Tri拓'
+    },
+    {
+        id:2,
+        title:'RNG皇族工作室',
+        icon:'dls_03.png',
+        img:'dls_07.png',
+        guan:'关注',
+        guanNum:'98978',
+        map:'地区',
+        mapNum:'华北',
+        ping:'代理平台',
+        pingNum:'RNG Uzi/Jian豪'
+    },
+    {
+        id:3,
+        title:'SKT 1工作室',
+        icon:'dls_03.png',
+        img:'dls_07.png',
+        guan:'关注',
+        guanNum:'876882',
+        map:'地区',
+        mapNum:'华中',
+        ping:'代理平台',
+        pingNum:'SKT T1 Faker/Mi'
+    },
+    {
+        id:4,
+        title:'EDG个人工作室',
+        icon:'dls_03.png',
+        img:'dls_07.png',
+        guan:'关注',
+        guanNum:'1287',
+        map:'地区',
+        mapNum:'中部',
+        ping:'代理平台',
+        pingNum:'EDG clearLove/C'
+    }
+]
+var dls = angular.module('dls',[]);
+dls.controller('dls',function($scope){
+    $scope.dls=dlsArr;
+    $scope.dlsItem=dlsItem;
+})
+dls.directive('dls',function(){
+    return{
+        restrict:'ECMA',
+        templateUrl:'tpls/dls.html',
+        replace:true
+    }
+})
+dls.directive('dlsCon',function(){
+    return{
+        restrict:'ECMA',
+        templateUrl:'tpls/dlscon.html',
+        replace:true
+    }
+})
+dls.directive('dlsItem',function(){
+    return{
+        restrict:'ECMA',
+        templateUrl:'tpls/dlsItem.html',
+        replace:true
+    }
+})
