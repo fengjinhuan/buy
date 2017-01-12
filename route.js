@@ -3,5 +3,7 @@ app.config(['$routeProvider',function($l){
         templateUrl:'pages/index/index.html'
     }).when('/dls',{
         templateUrl:'pages/dls/index.html'
+    }).when('/sqrz',{
+        templateUrl:'pages/sqrz/index.html'
     })
 }])

@@ -1,0 +1,24 @@
+var sqrz = angular.module('sqrz',[]);
+sqrz.directive('topTitle',function(){
+    return{
+        restrict:'ECMA',
+        templateUrl:'tpls/topTitle.html',
+        replace:true,
+        scope:{
+            title:"@tit",
+            url:"@url"
+        }
+    }
+})
+sqrz.directive('sqrzCall',function(){
+    return{
+        restrict:'ECMA',
+        templateUrl:'tpls/sqrzCall.html',
+        replace:true,
+        scope:{
+            val:"@val",
+            type:"@type",
+            tit:"@tit"
+        }
+    }
+})

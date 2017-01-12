@@ -1,0 +1,112 @@
+.sqrz-span-box{
+    height: 2.5rem;width: 100%;
+    background: #fff;
+    margin: 0.2rem 0;
+    padding: 0.2rem;
+    color: #333;
+    box-sizing: border-box;
+}
+.sprz-span{
+    height: 100%;width: 100%;
+    border: 1px dashed #eee;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 0.2rem;
+    box-sizing: border-box;
+    align-items: center;
+}
+.sprz-span li:before{
+    content: "·";
+    margin-right: 0.1rem;
+    font-size: 0.26rem;
+    color: #000;
+}
+.sprz-span li{
+    line-height: 0.4rem;
+    width: 100%;
+    font-size: 0.26rem;
+}
+.sprz-call{
+    height: auto;width: 100%;
+    padding: 0.2rem;
+    box-sizing: border-box;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0.2rem;
+}
+.sqrz-from{
+    height: 0.8rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 0.27rem;
+    justify-content: space-between;
+    margin-bottom: 0.2rem;
+}
+.sqrz-from input{
+    outline: none;
+    height: 0.8rem;
+    width: 5.1rem;
+    text-indent: 0.2rem;
+    color: #B0AFAF;
+    font-size: 0.24rem;
+    border: 1px solid #ccc;
+    background: #FDFBFB;
+}
+.file-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.file-box h1{
+    align-items: center;
+    display: flex;
+    font-size: 0.28rem;
+    color: #333;
+    margin-right: 0.2rem;
+}
+.file-box{
+    margin-top: 0.2rem;
+    width: 5.2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.file-box input{
+    height: 0.6rem;width: 2.62rem;
+    text-indent: 0.2rem;
+    color: #333;
+    border-radius: 20rem;
+    font-size: 0.24rem;
+    border: 1px solid #ccc;
+    background: #EEEEEE;
+}
+.sqrz-from .file{
+    height: 0.6rem;width: 2.62rem;
+    border: none;
+}
+.sprz-call h2{
+    align-items: flex-end;
+    text-indent: 1.8rem;
+    margin: 0.25rem 0 0.4rem;
+    font-size: 0.2rem;
+    color: #999999;
+}
+.sprz-call button{
+    background: #0D76D3;
+    list-style: none;
+    border: none;
+    height: 0.8rem;width: 5.1rem;
+    color: #fff;
+    font-size: 0.34rem;
+    text-align: center;
+    margin-left: 1.8rem;
+    border-radius: 10px;
+}
+.sqrz-call-h1{
+    margin-top: 0.4rem;
+    font-size: 0.2rem;
+}
+.sqrz-call-h1 span{
+    color: #EF4B49;
+}
