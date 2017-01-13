@@ -1,0 +1,87 @@
+.dlsxq-title{
+    display: flex;
+    /*justify-content: space-around;*/
+    align-items: center;
+    height: 0.6rem;width: 100%;
+    background: #0D76D3;
+    margin-top: 0.2rem;
+    color: #fff;
+    font-size: 0.34rem;
+}
+.dlsxq-title h1{
+    width: 100%;
+    text-align: center;
+}
+.dlsxq-title img{
+    margin-right: 0.2rem;
+    height: 0.34rem;
+    width: 0.82rem;
+}
+.dlsxq-con{
+    height: 2.66rem;width: 100%;
+    box-sizing: border-box;
+    padding: 0.3rem 0.2rem 0.2rem;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 0.24rem;
+    color: #333;
+}
+.dlsxq-con img{
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    height: 1.64rem;width: 4rem;
+}
+.dlsxq-con-span{
+    height:1.64rem;width: 2.5rem;
+    padding-left: 0.3rem;
+    border-left: 1px solid #eee;
+    box-sizing: border-box;
+    margin-left: 0.3rem;
+}
+.dlsxq-con-span h1{
+    height: 0.3rem;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom:0.3rem; 
+}
+.dlsxq-act{
+    color: #EF4B49;
+}
+.www{
+    display: flex;
+    font-size: 0.22rem;
+    align-items: center;
+}
+.www h1{
+    margin-right: 0.85rem;
+}
+.dlsxq-btn{
+    padding: 0.2rem;
+    box-sizing: border-box;
+    height: 1rem;width: 100%;
+}
+.dlsxq-btn button{
+    height: 100%;width: 100%;
+    background: #0D76D3;
+    color: #fff;
+    font-size: 0.3rem;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+.dlsxq-list{
+    height: auto;width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    font-size: 0.26rem;
+    padding: 0 0.2rem 0.2rem;
+    margin-bottom: 0.2rem;
+}
+.dlsxq-h1-call{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #BBBBBB;
+    height: 0.66rem;
+}

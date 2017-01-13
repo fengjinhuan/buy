@@ -1,0 +1,36 @@
+<div class="dls-box">
+    <top-title tit="代理商详情" url="#/dls"></top-title>
+    <div class="dlsxq-title">
+        <h1>{{dlsItem[nowid].title}}</h1>
+        <img src="images/{{dlsItem[nowid].icon}}" alt="">
+    </div>
+    <div class="dlsxq-con">
+        <img src="images/{{dlsItem[nowid].img}}" alt="">
+        <div class="dlsxq-con-span">
+            <h1>关注:<span class="dlsxq-act"> {{dlsItem[nowid].guanNum}}</span></h1>
+            <h1>地区:<span> {{dlsItem[nowid].mapNum}}</span></h1>
+            <h1>代理平台:<span>{{dlsItem[nowid].nowPing}}</span></h1>
+        </div>
+        <div class="www">
+            <h1>官方网址 : {{dlsItem[nowid].www}}</h1>
+            <a href="" class="call-qq">
+                <span class="call-qq-icon"></span>
+                <span>联系客服</span>
+            </a>
+        </div>
+    </div>
+    <div class="dlsxq-btn">
+        <button>立即关注</button>    
+    </div>
+    <div class="dlsxq-list">
+        <dlsxq-call tit="成立时间" con="{{dlsItem[nowid].time}}"></dlsxq-call>
+        <dlsxq-call tit="地址" con="{{dlsItem[nowid].dizhi}}"></dlsxq-call>
+        <dlsxq-call tit="代理平台" con="{{dlsItem[nowid].nowPing}}{{dlsItem[nowid].nowPingMore}}"></dlsxq-call>
+    </div>
+    <div class="dlsxq-list">
+        <dlsxq-call tit="官方地址" con="{{dlsItem[nowid].www}}"></dlsxq-call>
+        <dlsxq-call tit="客服电话" con="{{dlsItem[nowid].tell}}"></dlsxq-call>
+        <dlsxq-call tit="客服邮箱" con="{{dlsItem[nowid].email}}"></dlsxq-call>
+        <dlsxq-call tit="客服QQ" con="{{dlsItem[nowid].QQ}}"></dlsxq-call>
+    </div>
+</div>
