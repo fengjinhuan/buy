@@ -33,4 +33,21 @@
         <dlsxq-call tit="客服邮箱" con="{{dlsItem[nowid].email}}"></dlsxq-call>
         <dlsxq-call tit="客服QQ" con="{{dlsItem[nowid].QQ}}"></dlsxq-call>
     </div>
+    <!--外汇反佣-->
+    <div class="dlsxq-w">
+        <h1>外汇返佣</h1>
+        <div class="dlsxq-w-box" ng-controller="dlsxq">
+            <a href="" class="dlsxq-w-list" ng-repeat="v in dlsxqArr track by $index">
+                <div class="dlsxq-w-top">
+                    <img src="images/{{v.url}}" alt="">
+                    <h1>{{v.title}}</h1>
+                </div>
+                <h1>外汇返佣<span class="whfy-span">{{v.money}}</span></h1>
+                <div class="dlsxq-w-bottom">
+                    <div class="dlsxq-w-icon"></div>
+                    <h2>优势：{{v.love}}</h2>
+                </div>
+            </a>
+        </div>
+    </div>
 </div>

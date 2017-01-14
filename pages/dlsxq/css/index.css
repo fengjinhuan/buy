@@ -85,3 +85,69 @@
     border-bottom: 1px solid #BBBBBB;
     height: 0.66rem;
 }
+/*外汇返佣*/
+.dlsxq-w{
+    height: auto;width: 100%;
+    padding: 0 0.2rem;
+    background: #fff;
+    box-sizing: border-box;
+}
+.dlsxq-w>h1{
+    font-size:0.3rem;
+    font-weight: bold;
+    height: 0.75rem;
+    line-height: 0.75rem;
+}
+.dlsxq-w-box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.dlsxq-w-list{
+    color: #333;
+    height: 3.9rem;width: 3.4rem;
+    border: 1px solid #ccc;
+    margin-bottom: 0.2rem;
+}
+.dlsxq-w-top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.dlsxq-w-top img{
+    margin-top: 0.2rem;
+    height: 1.4rem;width: 3.08rem;
+    border: 1px solid #bbb;
+}
+.dlsxq-w-top h1{
+    font-size: 0.2rem;
+    height: 0.62rem;
+    line-height: 0.62rem;
+}
+.dlsxq-w-list>h1{
+    text-indent: 0.2rem;
+    height: 0.66rem;
+    line-height: 0.66rem;
+    border-top:1px solid #eee; 
+    border-bottom:1px solid #eee;
+}
+.whfy-span{
+    margin-left: 0.42rem;
+    color: #C70606;
+    font-weight: bold;
+}
+.dlsxq-w-bottom{
+    display: flex;
+    padding: 0.1rem 0.2rem;
+}
+.dlsxq-w-icon{
+    height: 0.4rem;width: 0.4rem;
+    background: url(../../../images/dlsxq_icon.png) no-repeat;
+    background-size: cover;
+}
+.dlsxq-w-bottom>h2{
+    width: 2.7rem;
+    line-height: 0.4rem;
+}
