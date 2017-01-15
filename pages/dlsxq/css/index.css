@@ -86,7 +86,7 @@
     height: 0.66rem;
 }
 /*外汇返佣*/
-.dlsxq-w{
+.dlsxq-w,.dlsxq-y{
     height: auto;width: 100%;
     padding: 0 0.2rem;
     background: #fff;
@@ -150,4 +150,157 @@
 .dlsxq-w-bottom>h2{
     width: 2.7rem;
     line-height: 0.4rem;
+}
+.dlsxq-y>h1{
+    height: 0.7rem;line-height: 0.7rem;
+    font-size: 0.3rem;font-weight: bold;
+    border-bottom: 1px solid #e2e2e2;
+}
+.shuru{
+    height: 1.3rem;width: 100%;
+    border: 1px solid #e2e2e2;
+    padding: 0.3rem;
+    box-sizing: border-box;
+    outline: none;
+    line-height: 0.4rem;
+    margin-top: 0.3rem;
+    color: #999;
+    resize: none;
+    font-size: 0.2rem;
+}
+.sctp{
+    height: 0.74rem;
+    font-size: 0.26rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sctp button{
+    color: #333;
+    width: 1.12rem;height: 0.4rem;
+    background: #eee;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    outline: none;
+}
+.sctp h2{
+    font-size: 0.1rem;
+    color: #999;
+}
+.yzm h1,.sctp h1{
+    color: #333;
+    font-size: 0.24rem;
+}
+input{
+    outline: none;
+}
+.yzm-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.yzm{
+    justify-content: space-between;
+    display: flex;
+    height: 0.7rem;
+    width: 3.35rem;
+    align-items: center;
+}
+.yzm-shuru{
+    width: 1.38rem;
+    border: 1px solid #ccc;
+}
+.yzm-box input{
+    box-sizing: border-box;
+    height: 0.38rem;
+}
+.yzm-img{
+    box-sizing: border-box;
+    height: 0.38rem;width: 0.92rem;
+    border: 1px solid #000;
+    background: url(../../../images/yzm.png) no-repeat;
+    background-size: cover;
+}
+.yzm-click{
+    width: 1.5rem;
+    color: #FDFBFB;
+    border: none;
+    background: #A0A0A0;
+    border-radius: 4px;
+    height: 0.4rem;
+}
+.speak-box{
+    height: auto;width: 100%;
+}
+.speak{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.speak-img{
+    height: 0.82rem;width: 0.82rem;
+    border-radius: 50%;
+    background: #CCCCCC;
+}
+.speak-con{
+    width: 6.1rem;
+    height: 100%;
+    padding: 0.2rem 0 0.2rem 0.2rem;
+    box-sizing: border-box;
+}
+.speak-me{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.speak-me h1{
+    font-size: 0.28rem;
+    color: #000;
+    font-weight: bold;
+}
+.speak-me span{
+    color: #999;
+    font-size: 0.24rem;
+}
+.speak-time{
+    font-size: 0.28rem;
+    color: #999;
+}
+.speak-main{
+    height: auto;width: 100%;
+    font-size: 0.29rem;
+    color: #333;
+    line-height: 0.5rem;
+}
+.speak-sec{
+    padding: 0 0.25rem;
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: #F2F2F2;
+}
+.speak-add{
+    font-size: 0.24rem;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.speak-add-name{
+    height: auto;
+    line-height: 0.4rem;
+    width: auto;
+    color: #0D76D3;
+}
+.speak-add-con{
+    margin-left: 0.1rem;
+    line-height: 0.4rem;
+}
+.speak-add-more{
+    color: #999;
+    font-size: 0.24rem;
+    width: 100%;
 }

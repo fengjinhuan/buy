@@ -43,23 +43,65 @@ var dlsxqArr = [
 dlsxq.controller('dlsxq',function($scope){
     $scope.dlsxqArr=dlsxqArr;
 })
-        // id:4,
-        // title:'EDG个人工作室',
-        // icon:'dls_03.png',
-        // img:'dls_07.png',
-        // guan:'关注',
-        // guanNum:'1287',
-        // map:'地区',
-        // mapNum:'中部',
-        // ping:'代理平台',
-        // pingNum:'EDG clearLove/C',
-        // www:"http://www.edg2.com",
-        // nowPing:"EDG market",
-        // time:"2001年",
-        // dizhi:"长治市长子县丹朱镇",
-        // nowPingMore:"、卡萨丁扩、按时",
-        // tell:"+86 400 2222 111",
-        // email:"1333333@qq.com",
-        // QQ:"12321312",
-        // money:"6$",
-        // love:"被高大上到时看连锁"
+var ly =[
+    {
+        id:1,
+        con:'我是第一个留言我是第一个留言',
+        time:'2016年5月',
+        sec:[
+            {
+            id:1,
+            con:'我是第一条二级回复1',
+            name:'APP'
+            },
+            {
+            id:2,
+            con:'我是第一条二级回复2',
+            name:'冯晋环'    
+            },
+            {
+            id:3,
+            con:'我是第一条二级回复3',
+            name:'无名剑客'    
+            }
+        ]
+    },
+    {
+        id:2,
+        con:'我是第二个留言我是第二个留言我是第二个留言我是第二个留言',
+        time:'2016年6月',
+        sec:[]
+    }
+]
+dlsxq.controller('ly',function($scope){
+    $scope.flag='block';
+    $scope.num=2;
+    $scope.ly=ly;
+    $scope.lyb='';
+    $scope.add=function(e){
+        if($scope.lyb){
+            $scope.ly.push({
+                id:e+1,
+                con:$scope.lyb,
+                time:new Date().getTime(),
+                sec:[]
+            });
+            localStorage.lyb=$scope.lyb;
+            $scope.lyb='';
+       } 
+    };
+    $scope.sec=function(e){
+        if($scope.lyb){
+           $scope.ly[e].sec.push({
+               con:$scope.lyb,
+               name:'匿名回复'
+           });
+           $scope.lyb='';
+       } 
+       console.log($scope.ly[e].sec)
+    }
+    $scope.more=function(e){
+        $scope.flag='none';
+        $scope.num=100;
+    }
+})

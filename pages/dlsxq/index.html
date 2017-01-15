@@ -50,4 +50,42 @@
             </a>
         </div>
     </div>
+    <!--用户点评-->
+    <div class="dlsxq-y" ng-controller="ly">
+        <h1>用户点评</h1>
+        <textarea name="" id="" placeholder="在此发表你的评论" class="shuru" ng-model="lyb"></textarea>
+        <div class="sctp">
+            <h1>上传图片:</h1>
+            <button>上传</button>
+            <h2>(请上传GIF.JPG,PNG格式图片)</h2>
+        </div>
+        <div class="yzm-box">
+            <div class="yzm">
+                <h1>验证码:</h1>
+                <input type="text" class="yzm-shuru">
+                <div class="yzm-img"></div>
+            </div>
+            <input type="button" value="发表" class="yzm-click" ng-click="add(ly.length)">
+        </div>
+        <div class="speak-box">
+            <div class="speak" ng-repeat="v in ly track by $index">
+                 <div class="speak-img"></div>
+                 <div class="speak-con">
+                     <div class="speak-me">
+                        <h1>某某某:</h1>
+                        <span ng-click="sec($index)">回复</span>
+                     </div>
+                     <div class="speak-time">{{v.time|date:'yyyy年M月'}}</div>
+                     <div class="speak-main">{{v.con}}</div>
+                     <div class="speak-sec" ng-show="{{ly[v.id-1].sec?true:false}}">
+                         <div class="speak-add" ng-repeat="x in v.sec|limitTo:num">
+                             <span class="speak-add-name">{{x.name}}</span>
+                             <span class="speak-add-con">{{x.con}}</span>
+                         </div>
+                         <span class="speak-add-more" ng-show="{{ly[v.id-1].sec.length>2?true:false}}" ng-click="more($index)" ng-style="{display:flag}">更多回复></span>
+                     </div>
+                 </div>
+            </div>
+        </div>
+    </div>
 </div>
