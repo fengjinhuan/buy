@@ -10,6 +10,13 @@ dlsxq.directive('dlsxqCall',function(){
         }
     }
 });
+dlsxq.directive('yhdp',function(){
+    return{
+        restrict:'ECMA',
+        templateUrl:'tpls/yhdp.html',
+        replace:true
+    }
+})
 var dlsxqArr = [
     {
         id:1,
@@ -78,6 +85,7 @@ dlsxq.controller('ly',function($scope){
     $scope.num=2;
     $scope.ly=ly;
     $scope.lyb='';
+    // 一级回复
     $scope.add=function(e){
         if($scope.lyb){
             $scope.ly.push({
@@ -86,10 +94,10 @@ dlsxq.controller('ly',function($scope){
                 time:new Date().getTime(),
                 sec:[]
             });
-            localStorage.lyb=$scope.lyb;
             $scope.lyb='';
        } 
     };
+    // 二级 回复
     $scope.sec=function(e){
         if($scope.lyb){
            $scope.ly[e].sec.push({
@@ -98,7 +106,6 @@ dlsxq.controller('ly',function($scope){
            });
            $scope.lyb='';
        } 
-       console.log($scope.ly[e].sec)
     }
     $scope.more=function(e){
         $scope.flag='none';

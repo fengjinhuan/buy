@@ -1,0 +1,1 @@
+var news=angular.module('new',['ngRoute']);

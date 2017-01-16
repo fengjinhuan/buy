@@ -1,0 +1,31 @@
+.xwxq{
+    box-sizing: border-box;
+    padding: 0 0.2rem;
+    height: auto;
+    width: 100%;
+    background: #fff;
+    margin: 0.2rem 0;
+}
+.xwxq>h1{
+    font-size: 0.32rem;
+    color: #333;
+    font-weight: bold;
+    height: 0.96rem;
+    text-align: center;
+    line-height: 0.96rem;
+}
+.xwxq>h2{
+    height: 0.61rem;line-height: 0.61rem;
+    color: #888;
+}
+.xwxq>p{
+    line-height: 0.42rem;
+    font-size: 0.24rem;
+    text-indent: 0.3rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+.xwxq img{
+    margin: 0.2rem auto;
+    height: 3.4rem;width: 6rem;
+}

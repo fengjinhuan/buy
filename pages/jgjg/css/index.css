@@ -1,0 +1,70 @@
+/*监管机构*/
+.jgjg-box:nth-child(1){
+    margin-top:0.2rem; 
+}
+.jgjg-box{
+    margin-bottom: 0.2rem;
+    color: #333;
+    height: 2.6rem;width: 100%;
+    padding: 0.2rem;
+    box-sizing: border-box;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.jgjg-box>h1,.jgjg-box>h2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.jgjg-box>h1{
+    font-size: 0.34rem;
+    
+}
+.jgjg-box>h2{
+    font-size: 0.24rem;
+    color: #999;
+}
+.jgjg-span-box{
+    display: flex;
+    height: 1.28rem;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.jgjg-span-box>img{
+    height: 100%;
+    width: 2.6rem;
+    border: 1px solid #D2D2D2;
+    box-sizing: border-box;
+}
+.jgjg-span{
+    width: 4.23rem;height: 100%;
+    box-sizing: border-box;
+    padding-left: 0.3rem;
+    border-left: 1px solid #d2d2d2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.jgjg-icon{
+    display: flex;
+    width: 100%;
+    height: 0.3rem;
+}
+.jgjg-icon-list{
+    margin-right: 0.05rem;
+    height: 100%;
+    width: 0.3rem;
+    background: url(../../../images/jgjg_icon.png) no-repeat;
+    background-size: cover;
+}
+.jgjg-span>h1{
+    width: 100%;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    overflow: hidden;
+    font-size: 0.26rem;
+}

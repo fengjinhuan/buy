@@ -1,0 +1,16 @@
+<a href="#/jgjgxq/:{{v.id}}" class="jgjg-hash" ng-click="get($index)">
+    <div class="jgjg-box">
+        <h1>{{v.title}}</h1>
+        <h2>{{v.www}}</h2>
+        <div class="jgjg-span-box">
+            <img src="images/{{v.img}}" alt="">
+            <div class="jgjg-span">
+                <div class="jgjg-icon">
+                    <div class="jgjg-icon-list" ng-repeat="x in v.icon"></div>
+                </div>
+                <h1>所在地区：{{v.map}}</h1>
+                <h1>监管公司：{{v.jian}}</h1>
+            </div>
+        </div>
+    </div>
+</a>

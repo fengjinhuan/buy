@@ -1,0 +1,48 @@
+<div class="dls-box jgjgxq-box">
+    <top-title tit="{{jgjg[nowid].hot}}" url="#/jgjg"></top-title>
+    <div class="jgjg-box jgjgxq-id">
+            <h1>{{jgjg[nowid].title}}</h1>
+            <h2>{{jgjg[nowid].www}}</h2>
+            <div class="jgjg-span-box">
+                <img src="images/{{jgjg[nowid].img}}" alt="">
+                <div class="jgjg-span">
+                    <div class="jgjg-icon">
+                        <div class="jgjg-icon-list" ng-repeat="x in jgjg[nowid].icon"></div>
+                    </div>
+                    <h1>所在地区：{{jgjg[nowid].map}}</h1>
+                    <h1>监管公司：{{jgjg[nowid].jian}}</h1>
+                </div>
+            </div>
+    </div>
+    <div class="dlsxq-list jgjgxq-item">
+        <dlsxq-call tit="监管机构简介"></dlsxq-call>
+        <p class="jgjgxq-p">{{jgjg[nowid].jj}}</p>
+    </div>
+    <div class="dlsxq-list jgjgxq-item">
+        <dlsxq-call tit="监管公司"></dlsxq-call>
+        <p class="jgjgxq-jggs">
+            <span ng-repeat="l in jgjg[nowid].gc">{{l}}</span> 
+        </p>
+    </div>
+    <div class="dlsxq-list jgjgxq-item">
+        <dlsxq-call tit="机构特色"></dlsxq-call>
+        <p class="jgjgxq-jgte">{{jgjg[nowid].ts}}</p>
+    </div>
+    <a href="#/new/:{{jgjg[nowid].id}}" ng-repeat="k in jgjg[nowid].new track by $index" ng-click="inner($index)">
+        <div class="jgjgxq-news">
+            <div class="news-item">
+                <h1>{{k.title}}</h1>
+                <div class="new-img">
+                    <img src="images/{{x}}" alt="" ng-repeat="x in k.img">
+                </div>
+                <div class="new-bottom">
+                    <div class="new-left">
+                        <div class="new-btn">标签</div>
+                        <span>国内外汇交易平台排名</span>
+                    </div>
+                    <div class="new-right">2016-1-11</div>
+                </div>
+            </div>
+        </div>
+    </a>    
+</div>

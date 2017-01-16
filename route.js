@@ -7,5 +7,11 @@ app.config(['$routeProvider',function($l){
         templateUrl:'pages/sqrz/index.html'
     }).when('/dlsxq/:id',{
         templateUrl:'pages/dlsxq/index.html'
+    }).when('/jgjg',{
+        templateUrl:'pages/jgjg/index.html'
+    }).when('/jgjgxq/:id',{
+        templateUrl:'pages/jgjgxq/index.html'
+    }).when('/new/:id',{
+        templateUrl:'pages/new/index.html'
     })
 }])
